@@ -2,18 +2,41 @@ import Head from 'next/head';
 import Header from 'components/header';
 import { useRouter } from 'next/router';
 
+import localFont from "next/font/local";
+
 type LayoutType = {
   title?: string;
   description?: string;
   children?: React.ReactNode;
 }
 
+const poppins = localFont({
+  src: [
+    {
+      path: "../assets/css/fonts/Poppins-Black.woff",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../assets/css/fonts/Poppins-Bold.woff",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../assets/css/fonts/Poppins-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-poppins",
+});
+
 export default ({ children, title = 'Pratulya Fashions | Leading Apparel Manufacturing Subcontractor in Mumbai, India', description = "Pratulya Fashions specializes in bulk manufacturing of premium T-shirts, shirts, and corporate uniforms. As a subcontractor for apparel manufacturing in Mumbai, we deliver high-quality, customized clothing solutions for businesses, retailers, and corporate clients across India." }: LayoutType) => {
   const router = useRouter();
   const pathname = router.pathname;
 
   return (
-    <div className="app-main">
+    <div className={`${poppins.variable} antialiased app-main`}>
       <Head>
         <title>{ title }</title>
         <meta name='description' content={ description }/>
