@@ -9,7 +9,7 @@ const PageIntro = () => {
               <div className="page-intro__slide__content">
                 <h2 className='pt-[40px]'>Leading Apparel Manufacturing</h2>
                 <span className='text-white text-3xl tracking-wider font-bold'>Subcontractor in Mumbai, India</span>
-                <Link href="/contact" className="btn-shop mt-3 bg-black w-[160px] rounded-full"><i className="icon-right"></i>Know More</Link>
+                <Link href="/contact-us" className="btn-shop mt-3 bg-black w-[160px] rounded-full"><i className="icon-right"></i>Know More</Link>
               </div>
             </div>
           </div>

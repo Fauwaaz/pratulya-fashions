@@ -785,7 +785,7 @@ h5 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background: $gradient1;
+    background-image: url('/images/hero-banner.webp');
 
     @include breakpoint(phone) {
       height: 100vh;
