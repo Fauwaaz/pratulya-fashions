@@ -6,32 +6,33 @@ $breakpoints: (
   desktop-lg: 1202px
 );
 
+// Mixin for min-width breakpoints
 @mixin breakpoint($breakpoint) {
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
 
-    // If the breakpoint exists in the map.
-	@if map-has-key($breakpoints, $breakpoint) {
-	
-	// Get the breakpoint value.
-	$breakpoint-value: map-get($breakpoints, $breakpoint);
-	
-	//Build the media query
-		@media (min-width: $breakpoint-value) {
-			@content;
-		}
-	} 
+    // Build the media query.
+    @media (min-width: #{$breakpoint-value}) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not found in the \$breakpoints map.";
+  }
 }
 
+// Mixin for max-width breakpoints
 @mixin breakpointMax($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
 
-    // If the breakpoint exists in the map.
-	@if map-has-key($breakpoints, $breakpoint) {
-	
-	// Get the breakpoint value.
-	$breakpoint-value: map-get($breakpoints, $breakpoint);
-	
-	//Build the media query
-		@media (max-width: $breakpoint-value) {
-			@content;
-		}
-	} 
+    // Build the media query.
+    @media (max-width: #{$breakpoint-value}) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not found in the \$breakpoints map.";
+  }
 }

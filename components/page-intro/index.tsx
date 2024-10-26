@@ -1,37 +1,19 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {EffectFade, Navigation} from 'swiper';
-
-SwiperCore.use([EffectFade, Navigation]);
+import Link from 'next/link';
 
 const PageIntro = () => {
 
   return (
     <section className="page-intro">  
-      <Swiper navigation effect="fade" className="swiper-wrapper">
-        <SwiperSlide>
-          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-1.jpg')" }}>
+          <div className="page-intro__slide">
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Sale of the summer collection</h2>
-                <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a>
+                <h2 className='pt-[40px]'>Leading Apparel Manufacturing</h2>
+                <span className='text-white text-3xl tracking-wider font-bold'>Subcontractor in Mumbai, India</span>
+                <Link href="/contact" className="btn-shop mt-3 bg-black w-[160px] rounded-full"><i className="icon-right"></i>Know More</Link>
               </div>
             </div>
           </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-2.jpg')" }}>
-            <div className="container">
-              <div className="page-intro__slide__content">
-                <h2>Make your house into a home</h2>
-                <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-
-      <div className="shop-data">
+      {/* <div className="shop-data">
         <div className="container">
           <ul className="shop-data__items">
             <li>
@@ -59,7 +41,7 @@ const PageIntro = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 };

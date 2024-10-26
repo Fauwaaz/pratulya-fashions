@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "nodemon server.js",
     "build": "next build",
     "start": "next start",
     "export": "next build && next export"
@@ -16,24 +16,17 @@
     "next"
   ],
   "dependencies": {
-    "@reduxjs/toolkit": "^1.8.1",
+    "express": "^4.21.1",
     "lodash": "^4.17.21",
-    "next": "^12.1.0",
-    "next-redux-wrapper": "^6.0.2",
+    "next": "^15.0.1",
+    "nodemon": "^3.1.7",
     "rc-slider": "^9.3.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-hook-form": "^6.8.2",
-    "react-rater": "^5.1.1",
-    "react-redux": "^7.2.1",
     "react-select": "^3.1.0",
-    "redux": "^4.0.5",
-    "redux-devtools-extension": "^2.13.8",
-    "redux-persist": "^6.0.0",
-    "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "sass": "^1.26.10",
-    "swiper": "^6.5.1",
+    "sass": "^1.80.4",
     "swr": "^0.3.2",
     "use-onclickoutside": "^0.3.1"
   },
@@ -42,8 +35,11 @@
     "@types/node": "^17.0.34",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
+    "autoprefixer": "^10.4.20",
     "fslightbox-react": "^1.5.0",
     "node-fetch": "^3.1.1",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
     "typescript": "^4.6.4"
   }
 }
