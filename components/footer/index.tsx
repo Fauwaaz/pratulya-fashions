@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -9,7 +10,15 @@ const Footer = () => {
         <div className="site-footer__top">
           <div className="site-footer__description">
             <Link href="/">
-              <h6 className="site-logo">PRATULYA<span>&nbsp;FASHIONS</span> </h6>
+              <Image
+                className='mb-5'
+                src={'/images/Pratullya-Fashions-Logo.webp'}
+                height={50}
+                width={150}
+                alt="Pratullya Fashions Logo"
+                unoptimized={true}
+                fetchPriority='high'
+              />
             </Link>
             <p>House My Brand designs clothing for the young, the old & everyone in between - but most
               importantly, for the fashionable</p>

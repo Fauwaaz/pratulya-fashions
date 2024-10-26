@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import useOnClickOutside from 'use-onclickoutside';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 // import { RootState } from 'store';
 
 type HeaderType = {
@@ -49,8 +50,14 @@ const Header = ({ isErrorPage }: HeaderType) => {
       <header className={`site-header ${!onTop ? 'site-header--fixed' : ''}`}>
         <div className="container">
           <Link href="/">
-            <h1 className="site-logo">PRATULYA</h1>
-            <span className="color-blue tracking-wide">FASHIONS</span>
+            <Image 
+              src={'/images/Pratullya-Fashions-Logo.webp'}
+              height={50}
+              width={150}
+              alt="Pratullya Fashions Logo"
+              unoptimized={true}
+              fetchPriority='high'
+            />
           </Link>
           <nav ref={navRef} className={`site-nav ${menuOpen ? 'site-nav--open' : ''}`}>
             {/* <Link href="/products">Products</Link> */}
