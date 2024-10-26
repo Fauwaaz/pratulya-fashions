@@ -5,7 +5,6 @@ import type { AppProps } from 'next/app';
 
 import "../styles/globals.css"; 
 import 'rc-slider/assets/index.css';
-import 'react-rater/lib/react-rater.css';
 import '../assets/css/styles.scss';
 
 import * as gtag from './../utils/gtag';
