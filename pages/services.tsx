@@ -2,6 +2,7 @@ import Footer from 'components/footer';
 import Layout from '../layouts/Main';
 import Subscribe from 'components/subscribe';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const Services = () => {
   return (
@@ -13,7 +14,7 @@ const Services = () => {
         </Head>
         <section className='featured'>
           <h1 className='text-center text-4xl font-bold pb-4'>Our Services</h1>
-          <p className='leading-5 p-4 text-center'>At Pratulya Fashions, we provide a wide range of apparel manufacturing solutions tailored to meet the needs of businesses across industries. Our expertise lies in bulk production of T-shirts, shirts, uniforms, and customized garments, ensuring high-quality output with a focus on timely delivery. From retailers and startups to corporate clients, we offer flexible, scalable solutions to match your requirements.</p>
+          <p className='leading-5 p-4 text-center'>At <Link href="/contact-us" className='font-medium'>Pratulya Fashions</Link>, we provide a wide range of apparel manufacturing solutions tailored to meet the needs of businesses across industries. Our expertise lies in bulk production of T-shirts, shirts, uniforms, and customized garments, ensuring high-quality output with a focus on timely delivery. From retailers and startups to corporate clients, we offer flexible, scalable solutions to match your requirements.</p>
           <div style={{ backgroundImage: 'url(/images/tshirt-manufacturing.webp)' }} className="featured-item featured-item-large my-2">
             <div className="featured-item__content">
               <h3 className='text-bold'><strong>Bulk T-Shirt Manufacturing</strong></h3>

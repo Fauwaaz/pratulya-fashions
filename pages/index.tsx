@@ -13,7 +13,7 @@ const IndexPage = () => {
         <div className="container">
           <h3 className='text-center text-4xl font-bold py-4'>About Us</h3>
           <p className='leading-6'>
-            At Pratulya Fashions, we specialize in bulk manufacturing of premium T-shirts and shirts for businesses and retailers across India. Whether you need corporate uniforms, customized garments, or regular wear for men and women, our expertise ensures the perfect blend of quality, design, and timely delivery.
+            At <Link href="/contact-us" className='font-medium underline'>Pratulya Fashions</Link>, we specialize in bulk manufacturing of premium T-shirts and shirts for businesses and retailers across India. Whether you need corporate uniforms, customized garments, or regular wear for men and women, our expertise ensures the perfect blend of quality, design, and timely delivery.
             <br />
             <br />
             With a focus on subcontracted manufacturing solutions, we collaborate with brands, wholesalers, and corporate clients to bring high-quality fashion to life. Our manufacturing process is streamlined to deliver bulk orders efficiently, ensuring consistency, precision, and affordability.
@@ -22,7 +22,7 @@ const IndexPage = () => {
       </section>
 
       <section className="featured">
-        <h3 className='text-center text-4xl font-bold py-4'>Our Core Offerings</h3>
+        <h3 className='text-center text-4xl font-bold mb-4'>Our Core Offerings</h3>
         <div style={{ backgroundImage: 'url(/images/tshirt-manufacturing.webp)' }} className="featured-item featured-item-large my-2">
           <div className="featured-item__content">
             <h3>T-Shirt Manufacturing</h3>

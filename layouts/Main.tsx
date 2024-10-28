@@ -13,17 +13,12 @@ type LayoutType = {
 const poppins = localFont({
   src: [
     {
-      path: "../assets/css/fonts/Poppins-Black.woff",
+      path: "../assets/css/fonts/libre-baskerville-700.woff",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../assets/css/fonts/Poppins-Bold.woff",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../assets/css/fonts/Poppins-Regular.woff",
+      path: "../assets/css/fonts/libre-baskerville-regular.woff",
       weight: "400",
       style: "normal",
     },
