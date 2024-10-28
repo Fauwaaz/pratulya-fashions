@@ -45,7 +45,7 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Your Name"
-                    className="mt-1 block w-full p-3 border border-solid border-black/40 rounded-full focus:outline-none focus:ring-2 focus:ring-[#d48701]"
+                    className="mt-1 block w-full p-3 border border-solid border-black/40 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d48701]"
                   />
                 </div>
                 <div>
@@ -53,7 +53,7 @@ const Contact = () => {
                   <input
                     type="email"
                     placeholder="Your Email"
-                    className="mt-1 block w-full p-3 border border-solid border-black/40 rounded-full focus:outline-none focus:ring-2 focus:ring-[#d48701]"
+                    className="mt-1 block w-full p-3 border border-solid border-black/40 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d48701]"
                   />
                 </div>
                 <div>
@@ -62,12 +62,12 @@ const Contact = () => {
                     rows={1}
                     cols={30}
                     placeholder="Your Message"
-                    className="mt-1 block w-full p-3 border border-solid border-black/40 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#d48701] h-32"
+                    className="mt-1 block w-full p-3 border border-solid border-black/40 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d48701] h-32"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-[#d48701] text-white p-3 rounded-full font-semibold hover:bg-[#d48701] transition duration-200"
+                  className="w-full bg-[#d48701] text-white p-3 rounded-lg font-semibold hover:bg-[#d48701] transition duration-200"
                 >
                   Send Message
                 </button>
