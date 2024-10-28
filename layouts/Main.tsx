@@ -14,7 +14,7 @@ const poppins = localFont({
   src: [
     {
       path: "../assets/css/fonts/libre-baskerville-700.woff",
-      weight: "600",
+      weight: "700",
       style: "normal",
     },
     {
@@ -23,7 +23,7 @@ const poppins = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-poppins",
+  variable: "--font-libre",
 });
 
 export default ({ children, title = 'Pratulya Fashions | Leading Apparel Manufacturing Subcontractor in Mumbai, India', description = "Pratulya Fashions specializes in bulk manufacturing of premium T-shirts, shirts, and corporate uniforms. As a subcontractor for apparel manufacturing in Mumbai, we deliver high-quality, customized clothing solutions for businesses, retailers, and corporate clients across India." }: LayoutType) => {

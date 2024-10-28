@@ -61,11 +61,11 @@ const Header = ({ isErrorPage }: HeaderType) => {
           </Link>
           <nav ref={navRef} className={`site-nav ${menuOpen ? 'site-nav--open' : ''}`}>
             {/* <Link href="/products">Products</Link> */}
-            <Link href="/">Home</Link>
-            <Link href="/services">Services</Link>
-            <Link href="/about">About</Link>
-            <Link href="/contact-us">Contact Us</Link>
-            <button className="site-nav__btn"><p>Account</p></button>
+            <Link href="/" style={{fontWeight: "600", fontSize: "16px"}}>Home</Link>
+            <Link href="/services" style={{fontWeight: "600", fontSize: "16px"}}>Services</Link>
+            <Link href="/about" style={{fontWeight: "600", fontSize: "16px"}}>About</Link>
+            <Link href="/contact-us" style={{fontWeight: "600", fontSize: "16px"}}>Contact Us</Link>
+            <button className="site-nav__btn" style={{fontWeight: "600", fontSize: "16px"}}><p>Account</p></button>
           </nav>
           <div className="site-header__actions">
             {/* <button ref={searchRef} className={`search-form-wrapper ${searchOpen ? 'search-form--active' : ''}`}>

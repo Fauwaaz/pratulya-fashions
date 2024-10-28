@@ -10,7 +10,8 @@ body {
 @import './_variables.scss';
 
 // google fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 @mixin placeholder {
   &::-webkit-input-placeholder {
@@ -137,7 +138,7 @@ body {
 body {
   box-sizing: border-box;
   background-color: white;
-  font-family: var(--main-font);
+  font-family: "Libre Baskerville", serif;
   color: var(--color-text);
   font-size: 16px;
 
