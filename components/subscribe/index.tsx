@@ -4,7 +4,7 @@ const Subscribe = () => {
   return (
     <section className="subscribe">
       <div className="container">
-        <div style={{ backgroundImage: 'url(/images/subscribe.jpg)'}} className="subscribe__content">
+        <div className="subscribe__content">
           <div className="text-center">
             <h4 className="font-bold">Get in Touch with Us</h4>
             <br/>

@@ -1164,7 +1164,8 @@ h5 {
 .subscribe {
   .subscribe__content {
     padding: 35px 20px;
-    background-color: #FAFAFA;
+    background: $gradient1;
+    border-radius: 10px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -1175,7 +1176,7 @@ h5 {
     }
 
     @include breakpoint(tablet-lg) {
-      padding: 80px 125px 80px 105px;
+      padding: 40px 40px 40px 40px;
       display: flex;
       align-items: center;
     }
@@ -1188,8 +1189,9 @@ h5 {
       z-index: 5;
       width: 100%;
       height: 100%;
+      border-radius: 10px;
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.2);
     }
 
     * {
