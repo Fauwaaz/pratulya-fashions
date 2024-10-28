@@ -16,6 +16,7 @@ const Subscribe = () => {
       </div>
     </section>
   )
+  
 };
 
 export default Subscribe

@@ -39,6 +39,26 @@ const Services = () => {
               <p className='text-white w-[300px] leading-5 pb-4 xl:w-[500px]'>Our focus is on delivering high-quality stitching and fabrics that align with your business goals. Whether you need formalwear for offices or casual styles for retail, we have you covered.</p>
             </div>
           </div>
+
+          <div style={{ backgroundImage: 'url(/images/corporate-uniform.webp)', backgroundPosition: "center" }} className="featured-item featured-item-large">
+            <div className="featured-item__content">
+            <h3 className='text-bold'><strong>Corporate Uniforms and Workwear Solutions</strong></h3>
+              <p className='text-white w-[300px] leading-5 pb-4 xl:w-[500px]'>Our corporate uniform manufacturing services are designed to create branded apparel for businesses, including:</p>
+              <ul className='flex flex-col gap-3 text-white mb-4 text-sm' style={{listStyle: "circle"}}>
+                <li>Office Uniforms and Retail Staff Clothing</li>
+                <li>Custom Workwear for Industrial Use</li>
+                <li>Event-Specific Apparel Solutions</li>
+              </ul>
+              <p className='text-white w-[300px] leading-5 pb-4 xl:w-[500px]'>We ensure that all uniforms reflect your brand identity through custom embroidery and printing options.</p>
+            </div>
+          </div>
+
+          <div style={{ backgroundImage: 'url(/images/customized-garments.webp)', backgroundPosition: "center" }} className="featured-item featured-item-large">
+            <div className="featured-item__content">
+            <h3 className='text-bold'><strong>Customized Garment Manufacturing</strong></h3>
+              <p className='text-white w-[300px] leading-5 pb-4 xl:w-[500px]'>Looking for something unique? Our custom manufacturing services allow businesses to create exclusive designs with specific fabrics, colors, and sizes. This service is ideal for limited edition products, brand launches, and promotional events.</p>
+            </div>
+          </div>
         </section>
         <Subscribe />
         <Footer />
